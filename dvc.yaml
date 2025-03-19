@@ -1,0 +1,7 @@
+stages:
+  download_model:
+    cmd: python submodules/download_ckpt.py --model_type sd35m
+    deps:
+    - submodules/download_ckpt.py
+    outs:
+    - ./out/

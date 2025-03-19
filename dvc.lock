@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  download_model:
+    cmd: python submodules/download_ckpt.py --model_type sd35m
+    deps:
+    - path: submodules/download_ckpt.py
+      hash: md5
+      md5: 54db799356168b4da78451e8252682b1
+      size: 2920
+    outs:
+    - path: ./out/
+      hash: md5
+      md5: d2db90a658e551286688fa27e8c41577.dir
+      size: 10386533028
+      nfiles: 13

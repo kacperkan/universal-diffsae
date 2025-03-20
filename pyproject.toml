@@ -8,6 +8,7 @@ dependencies = [
     "accelerate==1.0.1",
     "bitsandbytes==0.44.1",
     "clip",
+    "custom-rasterizer",
     "datasets==3.2.0",
     "deepspeed>=0.16.4",
     "diff-gaussian-rasterization",
@@ -15,15 +16,20 @@ dependencies = [
     "dvc>=3.59.1",
     "einops==0.8.0",
     "fire==0.7.0",
+    "huggingface>=0.0.1",
     "huggingface-hub==0.26.2",
+    "hy3dgen",
     "imageio>=2.37.0",
     "imageio-ffmpeg>=0.6.0",
+    "ipdb>=0.13.13",
     "ipython>=9.0.2",
+    "isort>=6.0.1",
     "jupyter>=1.1.1",
     "kiui>=0.2.14",
     "loguru>=0.7.3",
     "lpips>=0.1.4",
     "matplotlib==3.10.0",
+    "mesh-processor",
     "natsort==8.4.0",
     "numpy==1.26.4",
     "omegaconf>=2.3.0",
@@ -34,6 +40,9 @@ dependencies = [
     "plyfile>=1.1",
     "psutil==6.1.0",
     "pyarrow>=19.0.1",
+    "pybind11>=2.13.6",
+    "pygltflib>=1.16.3",
+    "pymeshlab>=2023.12.post3",
     "pyyaml==6.0.2",
     "redis>=5.2.1",
     "rembg[gpu]>=2.0.65",
@@ -49,8 +58,10 @@ dependencies = [
     "torchvision==0.20.1",
     "tqdm==4.66.6",
     "transformers==4.46.1",
+    "trimesh>=4.6.5",
     "triton==3.1.0",
     "wandb==0.19.5",
+    "xatlas>=0.0.9",
     "xformers==0.0.29.post1",
 ]
 
@@ -137,3 +148,6 @@ docstring-code-line-length = "dynamic"
 [tool.uv.sources]
 clip = { git = "https://github.com/openai/CLIP.git" }
 diff-gaussian-rasterization = { git = "https://github.com/BaowenZ/RaDe-GS/", subdirectory = "submodules/diff-gaussian-rasterization" }
+hy3dgen = { git = "https://github.com/Tencent/Hunyuan3D-2" }
+custom-rasterizer = { git = "https://github.com/Tencent/Hunyuan3D-2/", subdirectory = "hy3dgen/texgen/custom_rasterizer" }
+mesh-processor = { git = "https://github.com/Tencent/Hunyuan3D-2/", subdirectory = "hy3dgen/texgen/differentiable_renderer" }

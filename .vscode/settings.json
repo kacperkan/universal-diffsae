@@ -8,4 +8,5 @@
     "flake8.enabled": false,
     "cSpell.enabled": false,
     "ruff.enable": true,
+    "isort.check": true,
 }
